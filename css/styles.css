@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
 }
 
 body {
@@ -12,9 +11,12 @@ body {
 /* Style the header */
 
 .header {
-    background-color: rgb(165, 34, 34);
-    padding: 20px;
+    background-image: url('../img/Fondo.jpg');
+    background-size: cover;
+    padding: 10% 20px;
+    background-attachment: fixed;
     text-align: center;
+    color: crimson;
 }
 
 .header h1 {
@@ -25,18 +27,13 @@ body {
     font-size: 40px;
 }
 
-.row h2 {
-    color: green;
-    text-align: center;
-}
-
 
 /* Create three equal columns that floats next to each other */
 
 
 /* Ejemplo de estilos por clase*/
 
-.column {
+.one-column {
     float: left;
     width: 100%;
     /*padding: 0 20% 0 20%;*/
@@ -55,17 +52,38 @@ body {
 
 /*Image Gallery*/
 
-.gallery {
+.three-column {
     padding: 20px;
     float: left;
     width: 33.33%;
 }
 
-.gallery img {
+.one-column h1,
+.one-column h2 {
+    text-align: center;
+}
+
+#cadetblue {
+    background-color: cadetblue;
+}
+
+
+/*clase de dos columnas*/
+
+.two-column {
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+
+
+/*clase de tres columnas*/
+
+.three-column img {
     width: 100%;
 }
 
-.gallery .desc {
+.three-column .desc {
     padding: 15px;
     text-align: center;
 }
